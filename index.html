@@ -64,25 +64,49 @@
     arjs="sourceType: webcam; debugUIEnabled: false; trackingMethod: best;">
 
     <a-marker preset="hiro" smooth="true" smoothCount="5">
-      <a-torus-knot position="0 0.35 0" color="#e84393" radius="0.12" radius-tubular="0.025" rotation="90 0 0"
+
+      <!-- 3D pink object -->
+      <a-torus-knot position="0 0.25 0" color="#e84393" radius="0.12" radius-tubular="0.025" rotation="90 0 0"
         scale="0.8 0.8 0.8">
       </a-torus-knot>
 
-      <a-sphere position="0.35 0.45 0" radius="0.09" color="#ffd166">
-      </a-sphere>
+      <!-- Visiting card floating above the pink object -->
+      <a-entity position="0 0.95 0" rotation="-90 0 0">
 
-      <a-sphere position="-0.35 0.45 0" radius="0.09" color="#06d6a0">
-      </a-sphere>
+        <!-- Card background -->
+        <a-plane width="1.8" height="1.05" color="#172554" material="shader: flat; side: double">
+        </a-plane>
 
-      <a-text value="Best Wishes!" color="#ffffff" align="center" position="0 0 0.78 0" rotation="-90 0 0" width="2.5">
-      </a-text>
+        <!-- Pink accent strip -->
+        <a-plane position="-0.78 0 0.012" width="0.06" height="1.05" color="#e84393"
+          material="shader: flat; side: double">
+        </a-plane>
 
-      <a-text value="Have a wonderful day" color="#ffe8f1" align="center" position="0 0.68 0" rotation="-90 0 0"
-        width="2">
-      </a-text>
+        <!-- CARD TITLE -->
+        <a-text value="VISITING CARD" position="-0.65 0.36 0.02" width="1.8" color="#ffd166" align="left" anchor="left">
+        </a-text>
 
-      <a-ring position="0 0.04 0" rotation="-90 0 0" radius-inner="0.30" radius-outer="0.32" color="#ffd166">
-      </a-ring>
+        <!-- YOUR NAME: EDIT THIS -->
+        <a-text value="DIXIT" position="-0.65 0.16 0.02" width="2.2" color="#ffffff" align="left" anchor="left">
+        </a-text>
+
+        <!-- YOUR OCCUPATION: EDIT THIS -->
+        <a-text value="Computer Science Student" position="-0.65 -0.04 0.02" width="1.8" color="#ffb3d9" align="left"
+          anchor="left">
+        </a-text>
+
+        <!-- YOUR PLACE: EDIT THIS -->
+        <a-text value="Place: SURAT" position="-0.65 -0.23 0.02" width="1.8" color="#ffffff" align="left"
+          anchor="left">
+        </a-text>
+
+        <!-- YOUR DATE OF BIRTH: EDIT THIS -->
+        <a-text value="DOB: 10-12-2005" position="-0.65 -0.39 0.02" width="1.8" color="#ffffff" align="left"
+          anchor="left">
+        </a-text>
+
+      </a-entity>
+
     </a-marker>
 
     <a-entity camera></a-entity>
