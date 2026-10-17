@@ -70,26 +70,7 @@
           <!-- VISITING CARD GROUP -->
           <a-entity id="visitingCard" position="0 1.0 0" rotation="-90 0 0" scale="0.8 0.8 0.8">
           
-            <!-- Blue card background -->
-            <a-plane
-              position="0 0 0"
-              width="2.0"
-              height="1.1"
-              color="#172554"
-              material="shader: flat; side: double">
-            </a-plane>
-          
-            <!-- Pink strip -->
-            <a-plane
-              position="-0.94 0 0.02"
-              width="0.06"
-              height="1.1"
-              color="#e84393"
-              material="shader: flat; side: double">
-            </a-plane>
-          
-            <!-- All text is inside the same group -->
-            <a-entity position="0 0 0.04">
+            
           
               <a-text
                 value="VISITING CARD"
@@ -135,8 +116,23 @@
                 align="left"
                 anchor="left">
               </a-text>
-          
-            </a-entity>
+            <!-- Blue card background -->
+              <a-plane
+                position="0 0 0"
+                width="2.0"
+                height="1.1"
+                color="#172554"
+                material="shader: flat; side: double">
+              </a-plane>
+            
+              <!-- Pink strip -->
+              <a-plane
+                position="-0.94 0 0.02"
+                width="0.06"
+                height="1.1"
+                color="#e84393"
+                material="shader: flat; side: double">
+              </a-plane>          
           </a-entity>
 
     </a-marker>
